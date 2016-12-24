@@ -36,10 +36,23 @@ namespace RetractableLiftingSurface
         private ModuleControlSurface controlSurface;
 
 
+
+        bool ignorePitch;
+       bool ignoreRoll;
+       bool ignoreYaw;
+
+
         public override void OnStart(StartState state)
         {
             deployAnimation = GetDeployAnimation();
             controlSurface = GetControlSurface();
+            if (controlSurface != null)
+            {
+                ignorePitch = controlSurface.ignorePitch;
+                ignoreRoll = controlSurface.ignoreRoll;
+                ignoreYaw = controlSurface.ignoreYaw;
+
+            }
 
             base.OnStart(state);
         }
@@ -56,9 +69,28 @@ namespace RetractableLiftingSurface
                 m = 1.0f - deployAnimation.animTime;
             }
             if (controlSurface != null)
+            {
                 controlSurface.deflectionLiftCoeff = (extendedCtlSfcDeflectionLiftCoeff - retractedCtlSfcDeflectionLiftCoeff) * m + retractedCtlSfcDeflectionLiftCoeff;
-            
+                if (m == 1)
+                {
+                    controlSurface.ignorePitch = ignorePitch;
+                    controlSurface.ignoreRoll = ignoreRoll;
+                    controlSurface.ignoreYaw = ignoreYaw;
+                }
+                else
+                {
+                    controlSurface.ignorePitch = true;
+                    controlSurface.ignoreRoll = true;
+                    controlSurface.ignoreYaw = true;
+                }
+            }
+
             deflectionLiftCoeff = (extendedDeflectionLiftCoeff - retractedDeflectionLiftCoeff) * m + retractedDeflectionLiftCoeff;
+        }
+
+        public override string GetInfo()
+        {
+            return "Retracted Relative Wing Area: " + this.retractedDeflectionLiftCoeff + "\nExtended Relative Wing Area: " + this.extendedDeflectionLiftCoeff;
         }
 
         private ModuleAnimateGeneric GetDeployAnimation()
