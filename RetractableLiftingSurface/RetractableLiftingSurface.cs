@@ -35,30 +35,33 @@ namespace RetractableLiftingSurface
         // an integrated control surface, if needed
         private ModuleControlSurface controlSurface;
 
-
-
-        bool ignorePitch;
+        
+        
+       bool ignorePitch;
        bool ignoreRoll;
        bool ignoreYaw;
-
+        float lastAnimtime;
 
         public override void OnStart(StartState state)
         {
             deployAnimation = GetDeployAnimation();
             controlSurface = GetControlSurface();
-            if (controlSurface != null)
+            lastAnimtime = deployAnimation.animTime;
+            if (controlSurface)
             {
                 ignorePitch = controlSurface.ignorePitch;
                 ignoreRoll = controlSurface.ignoreRoll;
                 ignoreYaw = controlSurface.ignoreYaw;
-
             }
-
             base.OnStart(state);
         }
 
         public void LateUpdate()
         {
+            if (HighLogic.LoadedSceneIsEditor)
+                lastAnimtime = deployAnimation.animTime;
+
+          //  Debug.Log("lastAnimtime: " + lastAnimtime.ToString() + "  deployAnimation.animTime: " + deployAnimation.animTime.ToString());
             float m;
             if (retracted == 0)
             {
@@ -71,17 +74,33 @@ namespace RetractableLiftingSurface
             if (controlSurface != null)
             {
                 controlSurface.deflectionLiftCoeff = (extendedCtlSfcDeflectionLiftCoeff - retractedCtlSfcDeflectionLiftCoeff) * m + retractedCtlSfcDeflectionLiftCoeff;
-                if (m == 1)
+                if (HighLogic.LoadedSceneIsFlight)
                 {
-                    controlSurface.ignorePitch = ignorePitch;
-                    controlSurface.ignoreRoll = ignoreRoll;
-                    controlSurface.ignoreYaw = ignoreYaw;
-                }
-                else
-                {
-                    controlSurface.ignorePitch = true;
-                    controlSurface.ignoreRoll = true;
-                    controlSurface.ignoreYaw = true;
+                    if (lastAnimtime != deployAnimation.animTime)
+                    {
+                        lastAnimtime = deployAnimation.animTime;
+                        if (m == 1)
+                        {
+                            controlSurface.ignorePitch = ignorePitch;
+                            controlSurface.ignoreRoll = ignoreRoll;
+                            controlSurface.ignoreYaw = ignoreYaw;
+                        }
+                        else
+                        {
+                            controlSurface.ignorePitch = true;
+                            controlSurface.ignoreRoll = true;
+                            controlSurface.ignoreYaw = true;
+                        }
+                    }
+                    else
+                    {
+                        if (m == 1)
+                        {
+                            ignorePitch = controlSurface.ignorePitch;
+                            ignoreRoll = controlSurface.ignoreRoll;
+                            ignoreYaw = controlSurface.ignoreYaw;
+                        }
+                    }
                 }
             }
 

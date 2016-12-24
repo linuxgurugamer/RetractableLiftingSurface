@@ -1,4 +1,7 @@
 
 0.0.1	Initial release
+
 0.1.0	Added info functionality for the editor
 		Added disable of control surfaces when not fully extended
+
+0.1.1	Fixed bug where  ignorePitch, ignoreYaw and ignoreRoll, which are always set to TRUE, making wing totally uncontrollable

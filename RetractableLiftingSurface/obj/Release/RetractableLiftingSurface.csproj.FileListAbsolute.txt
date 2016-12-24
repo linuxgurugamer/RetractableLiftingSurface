@@ -32,3 +32,4 @@ D:\Users\jbb\github\RetractableLiftingSurface\RetractableLiftingSurface\bin\Rele
 D:\Users\jbb\github\RetractableLiftingSurface\RetractableLiftingSurface\bin\Release\UnityEngine.xml
 D:\Users\jbb\github\RetractableLiftingSurface\RetractableLiftingSurface\obj\Release\RetractableLiftingSurface.dll
 D:\Users\jbb\github\RetractableLiftingSurface\RetractableLiftingSurface\obj\Release\RetractableLiftingSurface.pdb
+D:\Users\jbb\github\RetractableLiftingSurface\RetractableLiftingSurface\obj\Release\RetractableLiftingSurface.csprojResolveAssemblyReference.cache
