@@ -5,3 +5,5 @@
 		Added disable of control surfaces when not fully extended
 
 0.1.1	Fixed bug where  ignorePitch, ignoreYaw and ignoreRoll, which are always set to TRUE, making wing totally uncontrollable
+
+0.1.2	Added license
