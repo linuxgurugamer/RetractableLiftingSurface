@@ -35,11 +35,14 @@ namespace RetractableLiftingSurface
         // an integrated control surface, if needed
         private ModuleControlSurface controlSurface;
 
-        
-        
-       bool ignorePitch;
-       bool ignoreRoll;
-       bool ignoreYaw;
+        float maxCtrlSurfaceRange;
+        float ctrlSurfaceRange = 0.0001f;
+        bool ctrlSurfaceActive = false;
+        double timeActive;
+
+        bool ignorePitch;
+        bool ignoreRoll;
+        bool ignoreYaw;
         float lastAnimtime;
 
         public override void OnStart(StartState state)
@@ -52,6 +55,18 @@ namespace RetractableLiftingSurface
                 ignorePitch = controlSurface.ignorePitch;
                 ignoreRoll = controlSurface.ignoreRoll;
                 ignoreYaw = controlSurface.ignoreYaw;
+                maxCtrlSurfaceRange = controlSurface.ctrlSurfaceRange;
+                if (!ignoreRoll)
+                {
+                    ctrlSurfaceRange = controlSurface.ctrlSurfaceRange;
+                    ctrlSurfaceActive = true;
+                }
+                else
+                {
+                    ctrlSurfaceRange = 0;
+                    ctrlSurfaceActive = false;
+                }
+
             }
             base.OnStart(state);
         }
@@ -78,27 +93,48 @@ namespace RetractableLiftingSurface
                 {
                     if (lastAnimtime != deployAnimation.animTime)
                     {
+                        ctrlSurfaceActive = false;
+                        controlSurface.ctrlSurfaceRange = 0.0001f;
+
                         lastAnimtime = deployAnimation.animTime;
                         if (m == 1)
                         {
                             controlSurface.ignorePitch = ignorePitch;
                             controlSurface.ignoreRoll = ignoreRoll;
                             controlSurface.ignoreYaw = ignoreYaw;
+                            
+                            timeActive = Planetarium.GetUniversalTime();
                         }
                         else
                         {
                             controlSurface.ignorePitch = true;
                             controlSurface.ignoreRoll = true;
                             controlSurface.ignoreYaw = true;
+                            
+                            controlSurface.ctrlSurfaceRange = 0.0001f;
                         }
                     }
                     else
                     {
+                        ctrlSurfaceActive = true;
                         if (m == 1)
                         {
                             ignorePitch = controlSurface.ignorePitch;
                             ignoreRoll = controlSurface.ignoreRoll;
-                            ignoreYaw = controlSurface.ignoreYaw;
+                            ignoreYaw = controlSurface.ignoreYaw;                           
+                        }
+                    }
+                    if(ctrlSurfaceActive && controlSurface.ctrlSurfaceRange != maxCtrlSurfaceRange)
+                    {
+                        // by using 1 second, we avoid the need for any division
+                        if (Planetarium.GetUniversalTime() - timeActive >= 1.0)
+                        {
+                            ctrlSurfaceActive = false;
+                            controlSurface.ctrlSurfaceRange = maxCtrlSurfaceRange;
+                        }
+                        else
+                        {
+                            controlSurface.ctrlSurfaceRange = maxCtrlSurfaceRange * (float)(Planetarium.GetUniversalTime() - timeActive);
                         }
                     }
                 }

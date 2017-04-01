@@ -7,3 +7,6 @@
 0.1.1	Fixed bug where  ignorePitch, ignoreYaw and ignoreRoll, which are always set to TRUE, making wing totally uncontrollable
 
 0.1.2	Added license
+
+0.1.3
+		Added easing in of control surface after animation finishes.  Easin is over a period of 1 second
