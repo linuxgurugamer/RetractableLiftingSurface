@@ -9,4 +9,4 @@
 0.1.2	Added license
 
 0.1.3
-		Added easing in of control surface after animation finishes.  Easin is over a period of 1 second
+		Added easing in of control surface after animation finishes.  Ease-in is over a period of 1 second
