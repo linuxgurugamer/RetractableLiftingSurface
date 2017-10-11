@@ -1,5 +1,5 @@
 ﻿
-set H=R:\KSP_1.3.0_dev
+set H=R:\KSP_1.3.1_dev
 echo %H%
 
 set d=%H%
@@ -15,5 +15,5 @@ mkdir %d%
 copy /y bin\Debug\RetractableLiftingSurface.dll ..\GameData\RetractableLiftingSurface\Plugins
 copy  /y RetractableLiftingSurface.version ..\GameData\RetractableLiftingSurface\RetractableLiftingSurface.version
 
-xcopy /Y /E ..\GameData\RetractableLiftingSurface %H%\GameData\RetractableLiftingSurface
+xcopy /Y /E  /I ..\GameData\RetractableLiftingSurface %H%\GameData\RetractableLiftingSurface
 

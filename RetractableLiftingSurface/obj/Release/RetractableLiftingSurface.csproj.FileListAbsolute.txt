@@ -23,7 +23,6 @@ D:\Users\jbb\github\RetractableLiftingSurface\RetractableLiftingSurface\bin\Rele
 D:\Users\jbb\github\RetractableLiftingSurface\RetractableLiftingSurface\bin\Release\System.dll
 D:\Users\jbb\github\RetractableLiftingSurface\RetractableLiftingSurface\bin\Release\UnityEngine.dll
 D:\Users\jbb\github\RetractableLiftingSurface\RetractableLiftingSurface\bin\Release\UnityEngine.UI.dll
-D:\Users\jbb\github\RetractableLiftingSurface\RetractableLiftingSurface\bin\Release\TrackIRUnity.dll
 D:\Users\jbb\github\RetractableLiftingSurface\RetractableLiftingSurface\bin\Release\System.Xml.dll
 D:\Users\jbb\github\RetractableLiftingSurface\RetractableLiftingSurface\bin\Release\KSPAssets.dll
 D:\Users\jbb\github\RetractableLiftingSurface\RetractableLiftingSurface\bin\Release\Mono.Cecil.dll
@@ -32,3 +31,5 @@ D:\Users\jbb\github\RetractableLiftingSurface\RetractableLiftingSurface\bin\Rele
 D:\Users\jbb\github\RetractableLiftingSurface\RetractableLiftingSurface\bin\Release\UnityEngine.xml
 D:\Users\jbb\github\RetractableLiftingSurface\RetractableLiftingSurface\obj\Release\RetractableLiftingSurface.dll
 D:\Users\jbb\github\RetractableLiftingSurface\RetractableLiftingSurface\obj\Release\RetractableLiftingSurface.pdb
+D:\Users\jbb\github\RetractableLiftingSurface\RetractableLiftingSurface\bin\Release\KSPTrackIR.dll
+D:\Users\jbb\github\RetractableLiftingSurface\RetractableLiftingSurface\obj\Release\RetractableLiftingSurface.csproj.CoreCompileInputs.cache

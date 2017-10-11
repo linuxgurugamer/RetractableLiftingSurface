@@ -23,13 +23,13 @@ D:\Users\jbb\github\RetractableLiftingSurface\RetractableLiftingSurface\bin\Debu
 D:\Users\jbb\github\RetractableLiftingSurface\RetractableLiftingSurface\bin\Debug\System.dll
 D:\Users\jbb\github\RetractableLiftingSurface\RetractableLiftingSurface\bin\Debug\UnityEngine.dll
 D:\Users\jbb\github\RetractableLiftingSurface\RetractableLiftingSurface\bin\Debug\UnityEngine.UI.dll
-D:\Users\jbb\github\RetractableLiftingSurface\RetractableLiftingSurface\bin\Debug\TrackIRUnity.dll
+D:\Users\jbb\github\RetractableLiftingSurface\RetractableLiftingSurface\bin\Debug\KSPTrackIR.dll
 D:\Users\jbb\github\RetractableLiftingSurface\RetractableLiftingSurface\bin\Debug\System.Xml.dll
 D:\Users\jbb\github\RetractableLiftingSurface\RetractableLiftingSurface\bin\Debug\KSPAssets.dll
 D:\Users\jbb\github\RetractableLiftingSurface\RetractableLiftingSurface\bin\Debug\Mono.Cecil.dll
 D:\Users\jbb\github\RetractableLiftingSurface\RetractableLiftingSurface\bin\Debug\TDx.TDxInput.dll
 D:\Users\jbb\github\RetractableLiftingSurface\RetractableLiftingSurface\bin\Debug\Mono.Security.dll
 D:\Users\jbb\github\RetractableLiftingSurface\RetractableLiftingSurface\bin\Debug\UnityEngine.xml
-D:\Users\jbb\github\RetractableLiftingSurface\RetractableLiftingSurface\obj\Debug\RetractableLiftingSurface.csprojResolveAssemblyReference.cache
+D:\Users\jbb\github\RetractableLiftingSurface\RetractableLiftingSurface\obj\Debug\RetractableLiftingSurface.csproj.CoreCompileInputs.cache
 D:\Users\jbb\github\RetractableLiftingSurface\RetractableLiftingSurface\obj\Debug\RetractableLiftingSurface.dll
 D:\Users\jbb\github\RetractableLiftingSurface\RetractableLiftingSurface\obj\Debug\RetractableLiftingSurface.pdb
