@@ -27,7 +27,7 @@
 	int i2 = 0;
 	string s;
 
-	string versionfile =  @"D:\Users\jbb\github\RetractableLiftingSurface\RetractableLiftingSurface\RetractableLiftingSurface.version";
+	string versionfile =  @"D:\Users\jbb\github\RetractableLiftingSurface\RetractableLiftingSurface.version";
 	if (!File.Exists(versionfile))
 	{
 		Write("File: " + versionfile + " missing\n");		
