@@ -48,6 +48,12 @@ namespace RetractableLiftingSurface
         public override void OnStart(StartState state)
         {
             deployAnimation = GetDeployAnimation();
+            if (deployAnimation == null)
+            {
+                Debug.Log("RetractableLiftingSurface can't find a deploy animation for: " + this.part.partInfo.title);
+                Destroy(this);
+                return;
+            }
             controlSurface = GetControlSurface();
             lastAnimtime = deployAnimation.animTime;
             if (controlSurface)
