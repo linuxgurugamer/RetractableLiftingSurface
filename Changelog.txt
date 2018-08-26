@@ -22,3 +22,6 @@
 
 0.1.5.2
 	Added error message if no deploy animation found
+
+0.1.5.3
+	Updated .version file to use github instead of cybutek for version checks

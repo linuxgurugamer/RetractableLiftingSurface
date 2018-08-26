@@ -1,6 +1,6 @@
 ﻿{
   "NAME": "RetractableLiftingSurface",
-  "URL": "http://ksp-avc.cybutek.net/version.php?id=332",
+  "URL": "https://raw.githubusercontent.com/linuxgurugamer/RetractableLiftingSurface/master/RetractableLiftingSurface.version",
   "DOWNLOAD": "https://github.com/linuxgurugamer/RetractableLiftingSurface",
   "GITHUB" :
   {
@@ -11,7 +11,7 @@
     "MAJOR": 0,
     "MINOR": 1,
     "PATCH": 5,
-    "BUILD": 2
+    "BUILD": 3
   },
   "KSP_VERSION": {
     "MAJOR": 1,
