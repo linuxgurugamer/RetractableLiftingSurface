@@ -25,3 +25,6 @@
 
 0.1.5.3
 	Updated .version file to use github instead of cybutek for version checks
+
+0.1.5.4
+	Version bump for 1.5 rebuild

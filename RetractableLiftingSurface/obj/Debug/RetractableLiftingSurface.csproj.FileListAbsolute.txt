@@ -30,5 +30,4 @@ D:\Users\jbb\github\RetractableLiftingSurface\RetractableLiftingSurface\obj\Debu
 D:\Users\jbb\github\RetractableLiftingSurface\RetractableLiftingSurface\obj\Debug\RetractableLiftingSurface.dll
 D:\Users\jbb\github\RetractableLiftingSurface\RetractableLiftingSurface\obj\Debug\RetractableLiftingSurface.pdb
 D:\Users\jbb\github\RetractableLiftingSurface\RetractableLiftingSurface\bin\Debug\Ionic.Zip.dll
-D:\Users\jbb\github\RetractableLiftingSurface\RetractableLiftingSurface\bin\Debug\RedShellSDK.dll
 D:\Users\jbb\github\RetractableLiftingSurface\RetractableLiftingSurface\obj\Debug\RetractableLiftingSurface.csproj.CopyComplete

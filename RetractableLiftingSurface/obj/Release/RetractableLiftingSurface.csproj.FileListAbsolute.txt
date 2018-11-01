@@ -30,6 +30,5 @@ D:\Users\jbb\github\RetractableLiftingSurface\RetractableLiftingSurface\obj\Rele
 D:\Users\jbb\github\RetractableLiftingSurface\RetractableLiftingSurface\bin\Release\KSPTrackIR.dll
 D:\Users\jbb\github\RetractableLiftingSurface\RetractableLiftingSurface\obj\Release\RetractableLiftingSurface.csproj.CoreCompileInputs.cache
 D:\Users\jbb\github\RetractableLiftingSurface\RetractableLiftingSurface\bin\Release\Ionic.Zip.dll
-D:\Users\jbb\github\RetractableLiftingSurface\RetractableLiftingSurface\bin\Release\RedShellSDK.dll
 D:\Users\jbb\github\RetractableLiftingSurface\RetractableLiftingSurface\obj\Release\RetractableLiftingSurface.csproj.CopyComplete
 D:\Users\jbb\github\RetractableLiftingSurface\RetractableLiftingSurface\obj\Release\RetractableLiftingSurface.csprojResolveAssemblyReference.cache
