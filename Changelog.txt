@@ -28,3 +28,7 @@
 
 0.1.5.4
 	Version bump for 1.5 rebuild
+
+0.1.6
+	Updated AssemblyVersoin.tt
+	Version bump for 1.7.2
