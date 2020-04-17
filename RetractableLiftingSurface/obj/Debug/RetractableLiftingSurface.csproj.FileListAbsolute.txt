@@ -18,16 +18,7 @@ D:\Users\jbb\github\RetractableLiftingSurface\src\RetractableLiftingSurface\Retr
 D:\Users\jbb\github\RetractableLiftingSurface\src\RetractableLiftingSurface\RetractableLiftingSurface\obj\Debug\RetractableLiftingSurface.pdb
 D:\Users\jbb\github\RetractableLiftingSurface\RetractableLiftingSurface\bin\Debug\RetractableLiftingSurface.dll
 D:\Users\jbb\github\RetractableLiftingSurface\RetractableLiftingSurface\bin\Debug\RetractableLiftingSurface.pdb
-D:\Users\jbb\github\RetractableLiftingSurface\RetractableLiftingSurface\bin\Debug\Assembly-CSharp-firstpass.dll
-D:\Users\jbb\github\RetractableLiftingSurface\RetractableLiftingSurface\bin\Debug\Assembly-CSharp.dll
-D:\Users\jbb\github\RetractableLiftingSurface\RetractableLiftingSurface\bin\Debug\UnityEngine.dll
-D:\Users\jbb\github\RetractableLiftingSurface\RetractableLiftingSurface\bin\Debug\UnityEngine.UI.dll
-D:\Users\jbb\github\RetractableLiftingSurface\RetractableLiftingSurface\bin\Debug\KSPTrackIR.dll
-D:\Users\jbb\github\RetractableLiftingSurface\RetractableLiftingSurface\bin\Debug\KSPAssets.dll
-D:\Users\jbb\github\RetractableLiftingSurface\RetractableLiftingSurface\bin\Debug\Mono.Cecil.dll
-D:\Users\jbb\github\RetractableLiftingSurface\RetractableLiftingSurface\bin\Debug\TDx.TDxInput.dll
 D:\Users\jbb\github\RetractableLiftingSurface\RetractableLiftingSurface\obj\Debug\RetractableLiftingSurface.csproj.CoreCompileInputs.cache
 D:\Users\jbb\github\RetractableLiftingSurface\RetractableLiftingSurface\obj\Debug\RetractableLiftingSurface.dll
 D:\Users\jbb\github\RetractableLiftingSurface\RetractableLiftingSurface\obj\Debug\RetractableLiftingSurface.pdb
-D:\Users\jbb\github\RetractableLiftingSurface\RetractableLiftingSurface\bin\Debug\Ionic.Zip.dll
-D:\Users\jbb\github\RetractableLiftingSurface\RetractableLiftingSurface\obj\Debug\RetractableLiftingSurface.csproj.CopyComplete
+D:\Users\jbb\github\RetractableLiftingSurface\RetractableLiftingSurface\obj\Debug\RetractableLiftingSurface.csprojAssemblyReference.cache

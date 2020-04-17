@@ -28,6 +28,7 @@
 
 # 2:PROJNAME, PROJFILE, VERSIONFILE, PLUGINSFOLDER
 2:RetractableLiftingSurface,RetractableLiftingSurface/RetractableLiftingSurface.csproj,RetractableLiftingSurface.version,GameData/RetractableLiftingSurface/Plugins
+2:DeployableCtrlSrf,DeployableCtrlSrf/DeployableCtrlSrf.csproj,RetractableLiftingSurface.version,GameData/DeployableCtrlSrf/Plugins
 
 # 3:SOURCEFILE, DESTDIR
 3:RetractableLiftingSurface.version,GameData/RetractableLiftingSurface

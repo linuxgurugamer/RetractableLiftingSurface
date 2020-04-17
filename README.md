@@ -20,3 +20,4 @@ Add the following module to the cfg file ( which replaces the ModuleLiftingSurfa
         retractedCtlSfcDeflectionLiftCoeff = 0
         extendedCtlSfcDeflectionLiftCoeff = 1.25
     }
+
