@@ -1,5 +1,5 @@
 The project DeployableCtrlSrf is independent of the RetractableLiftingSurface,
-and has been included here for convinience only.
+and has been included here for convenience only.
 
 Deployable Aero Surface Plugin for Kerbal Space Program 1.2.2 by DerpyFirework
 
@@ -15,7 +15,7 @@ MODULE
 }
 
 The original license of this module was:
-License:
-This plugin is released into the Public Domain.
+	License:
+	This plugin is released into the Public Domain.
 
 As included in this mod, it is now under the MIT license
