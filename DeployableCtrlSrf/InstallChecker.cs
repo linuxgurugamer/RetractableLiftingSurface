@@ -42,7 +42,7 @@ namespace DeployableCtrlSrf
     {
         internal const string MODNAME = "Retractable Lifting Surface";
         internal const string FOLDERNAME = "RetractableLiftingSurface";
-        private const string EXPECTEDPATH = FOLDERNAME + "/Plugins";
+        internal const string EXPECTEDPATH = FOLDERNAME + "/Plugins";
 
         protected void Start()
         {

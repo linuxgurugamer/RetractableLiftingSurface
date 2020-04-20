@@ -40,3 +40,6 @@ ChangeLog
 
 0.2.1
 	Added ModuleDeployableAero project
+
+0.2.1.1
+	Fixed installChecker for DeployableCtrlSrf
